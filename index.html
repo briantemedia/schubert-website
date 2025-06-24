@@ -62,12 +62,6 @@
         .reveal-delay-5 { transition-delay: 0.75s; }
 
         /* Neuer Nav-Link Stil */
-        .nav-link {
-            @apply relative py-2 font-medium text-gray-600 transition-colors duration-300;
-        }
-        .nav-link:hover {
-            @apply text-gray-900;
-        }
         .nav-link::after {
             content: '';
             position: absolute;
@@ -116,9 +110,9 @@
                 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex items-center space-x-10">
-                    <a href="#leistungen" class="nav-link">Leistungen</a>
-                    <a href="#ueber-uns" class="nav-link">Über Uns</a>
-                    <a href="#projekte" class="nav-link">Projekte</a>
+                    <a href="#leistungen" class="nav-link relative py-2 font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Leistungen</a>
+                    <a href="#ueber-uns" class="nav-link relative py-2 font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Über Uns</a>
+                    <a href="#projekte" class="nav-link relative py-2 font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Projekte</a>
                     <a href="#kontakt" class="bg-gray-900 text-white font-medium py-2 px-5 rounded-lg hover:bg-brand-yellow hover:text-gray-900 transition-all duration-300 transform hover:scale-105">
                         Anfragen
                     </a>
@@ -151,12 +145,12 @@
                 <div class="absolute inset-0 hero-gradient"></div>
             </div>
             <div class="relative z-10 container mx-auto px-4">
-                <div class="max-w-xl text-left">
-                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4 reveal visible">
+                <div class="max-w-2xl text-left">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight mb-6 reveal visible">
                         Wir gestalten Zukunft. <br>
                         <span class="text-brand-yellow">Garten & Tiefbau</span> mit Leidenschaft.
                     </h1>
-                    <p class="text-lg md:text-xl text-gray-300 max-w-lg mb-8 reveal visible reveal-delay-1">
+                    <p class="text-xl md:text-2xl text-gray-300 max-w-xl mb-10 reveal visible reveal-delay-1">
                         Von der Vision bis zur Vollendung – Schubert Garten und Tiefbau ist Ihr Experte für anspruchsvolle Projekte im Freien.
                     </p>
                     <a href="#kontakt" class="bg-brand-yellow text-gray-900 font-bold py-4 px-8 rounded-lg text-lg transform inline-block cta-button reveal visible reveal-delay-2">
@@ -164,14 +158,14 @@
                     </a>
 
                     <!-- Wertversprechen -->
-                    <div class="mt-16 flex flex-col md:flex-row gap-8 text-white">
+                    <div class="mt-20 flex flex-col md:flex-row gap-8 text-white">
                         <div class="flex items-center gap-4 reveal visible reveal-delay-3">
                             <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-brand-yellow/20">
                                 <i data-lucide="award" class="w-6 h-6 text-brand-yellow"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold">15+ Jahre Erfahrung</h4>
-                                <p class="text-sm text-gray-400">Expertise, auf die Sie bauen können.</p>
+                                <h4 class="text-lg font-bold">15+ Jahre Erfahrung</h4>
+                                <p class="text-base text-gray-400">Expertise, auf die Sie bauen können.</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-4 reveal visible reveal-delay-4">
@@ -179,8 +173,8 @@
                                 <i data-lucide="phone" class="w-6 h-6 text-brand-yellow"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold">Kostenlose Erstberatung</h4>
-                                <p class="text-sm text-gray-400">Wir nehmen uns Zeit für Ihr Projekt.</p>
+                                <h4 class="text-lg font-bold">Kostenlose Erstberatung</h4>
+                                <p class="text-base text-gray-400">Wir nehmen uns Zeit für Ihr Projekt.</p>
                             </div>
                         </div>
                          <div class="flex items-center gap-4 reveal visible reveal-delay-5">
@@ -188,8 +182,8 @@
                                 <i data-lucide="star" class="w-6 h-6 text-brand-yellow"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold">Höchste Qualität</h4>
-                                <p class="text-sm text-gray-400">Garantiert erstklassige Ergebnisse.</p>
+                                <h4 class="text-lg font-bold">Höchste Qualität</h4>
+                                <p class="text-base text-gray-400">Garantiert erstklassige Ergebnisse.</p>
                             </div>
                         </div>
                     </div>
@@ -232,6 +226,12 @@
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Pflasterarbeiten</h3>
                         <p class="text-gray-600">Wir gestalten Wege, Einfahrten und Terrassen mit hochwertigen Materialien für eine langlebige und ansprechende Optik.</p>
                     </div>
+                </div>
+                 <!-- CTA Button -->
+                <div class="text-center mt-16 reveal reveal-delay-3">
+                    <a href="#kontakt" class="bg-brand-yellow text-gray-900 font-bold py-4 px-8 rounded-lg text-lg transform inline-block cta-button">
+                        Jetzt Ihr Projekt besprechen
+                    </a>
                 </div>
             </div>
         </section>
@@ -344,6 +344,12 @@
                            <h3 class="text-white text-xl font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Pool-Aushub</h3>
                         </div>
                     </div>
+                </div>
+                 <!-- CTA Button -->
+                <div class="text-center mt-16 reveal reveal-delay-3">
+                    <a href="#kontakt" class="bg-brand-yellow text-gray-900 font-bold py-4 px-8 rounded-lg text-lg transform inline-block cta-button">
+                        Jetzt Ihr Projekt besprechen
+                    </a>
                 </div>
             </div>
         </section>
